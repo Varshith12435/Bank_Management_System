@@ -139,10 +139,10 @@ M=[0]
 while(1):
     g=1
     print("\n\t\t\t\t\t\t\tWelcome to Bank")
-    print("\nIf you dont have account. Enter 'Create Account' to create your own bank account.")
+    print("\nIf you don't have account. Enter "1" to create your own bank account.")
     print("If you already have an Account.")
     a=input("Enter your Account Number to login:")
-    if (a== "Create Account"):
+    if (a=="1"):
         j = j + 1
         L.append(j)
         c = int(L[- 1])
@@ -177,4 +177,4 @@ while(1):
         else:
             print("No Account is created With this Account Number", a, "Please check your Account Number and Try again")
     else:
-        print("Enter your account number or Create Account option")
+        print("Enter your account number or "1" to Create Account")
