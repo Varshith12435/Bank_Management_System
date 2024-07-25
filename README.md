@@ -52,7 +52,9 @@ Enter the amount to withdraw, ensuring the minimum balance is maintained.
 Log in using your account number.
 
 Select option "5" to take a loan.
+
 Enter the loan amount and repayment period to view the loan details.
 # Logout or Exit
 Select option "6" to log out.
+
 Select option "7" to exit the application.
