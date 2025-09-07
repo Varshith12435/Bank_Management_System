@@ -13,7 +13,7 @@ class Account:
         self.email=input("Enter your email id:")
         self.type=input("Enter the type of account[Savings(S)/Current(C)]:")
         self.c=0
-        if(self.type=='S'):
+        if(self.type=='S' or self.type=='s'):
             while(self.c!=1):
                 print("Minimum balance for savings account is 500")
                 self.amount=float(input("Enter amount:"))
@@ -22,7 +22,7 @@ class Account:
                     self.c=1
                 else:
                     print("The amount", self.amount, "is insufficent for minimum balance in savings account, please try again")
-        elif(self.type=='C'):
+        elif(self.type=='C' or self.type=='c'):
             while(self.c!=1):
                 print("Minimum balance for currrent account is 1000")
                 self.amount=float(input("Enter Amount:"))
@@ -139,7 +139,7 @@ M=[0]
 while(1):
     g=1
     print("\n\t\t\t\t\t\t\tWelcome to Bank")
-    print("\nIf you don't have account. Enter "1" to create your own bank account.")
+    print("If you don't have account. Enter 1 to create your own bank account.")
     print("If you already have an Account.")
     a=input("Enter your Account Number to login:")
     if (a=="1"):
@@ -177,4 +177,4 @@ while(1):
         else:
             print("No Account is created With this Account Number", a, "Please check your Account Number and Try again")
     else:
-        print("Enter your account number or "1" to Create Account")
+        print("Enter your account number or 1 to Create Account")
